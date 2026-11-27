@@ -1,4 +1,4 @@
-// wetter-verlauf-karte v1.0.0
+// wetter-verlauf-karte v1.0.1
 // Einzeln installierbares Modul (Home Assistant Marketplace / HACS, Kategorie Dashboard).
 window.customCards = window.customCards || [];
 window.customCardFeatures = window.customCardFeatures || [];
@@ -254,7 +254,7 @@ class WetterVerlaufKarte extends HTMLElement {
 
 if (!customElements.get(TYPE9)) customElements.define(TYPE9, WetterVerlaufKarte);
 if (!window.customCards.some((c) => c.type === TYPE9)) {
-  window.customCards.push({ type: TYPE9, name: "Wetter-Verlauf-Karte", description: "Gemessene Wetterwerte (Temperatur, Regen, Wind, Luftdruck) mit Zeitraumwahl und Blättern" });
+  window.customCards.push({ type: TYPE9, name: "Wetter-Verlauf-Karte", description: "Gemessene Wetterwerte (Temperatur, Regen, Wind, Luftdruck) mit Zeitraumwahl und Blättern", preview: true });
 }
 
 // Eingabemaske (visueller Editor) und Startwerte
